@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html, body{
+    margin: 0;
+}
+
+.accordion{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.lead{
+    margin-left: 150px;
+    margin-right: 150px;
+}

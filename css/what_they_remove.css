@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html, body{
+    margin: 0;
+}
+
+.parallax{
+    background-image: url("../images/Sunset2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+}
+.container{
+    text-align: center;
+}
+
+.row{
+    text-align: center;
+}
+.accordion{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+.container{
+    padding: 0;
+
+}
+
+.container a{
+    margin-bottom: 20px;
+    
+}

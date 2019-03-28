@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html, body{
+    margin: 0;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/Sunset2.jpg");
+    /* Set a specific height */
+    min-height: 400px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.mw-80{
+
+    color: white;
+}
+.mw-35{
+    margin: 20px auto;
+}
+
+.inner{
+    color: white;
+}
+
+.container-fluid{
+    margin: 20px auto;
+
+}
+
+.card1{
+    background-image: url("../images/Happy-Customer.jpeg");
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    
+}
+
+.card1 a, .card2 a, .card3 a {
+    text-decoration: underline;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.card1 a:hover, .card2 a:hover, .card3 a:hover{
+    color: rgba(255, 255, 255,0.8);
+}
+
+.card2{
+    background-image: url("../images/Lifting.jpg");
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.card3{
+    background-image: url("../images/Call\ now.jpg");
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+
+}

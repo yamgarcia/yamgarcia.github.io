@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- BOOTSTRAP CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <title> Calculate </title>
+      <meta charset="UTF-8">
+      <!-- Makes better for mobile -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Each Page css -->
+      <link rel="stylesheet" type="text/css" href="../css/Calculate.css">
+      <!-- css stuff -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <!-- NAV BAR -->      
+      <body class="text-center">
+          <!-- NAV BAR |  Home | Services(What They Remove, Recycling (https://recyclebc.ca/), Donations) |  Prices(Calculate, How To Calculate, American Pricing) |  News  |  About  | Follow Us 10 in total-->
+          <!-- 11th to 15th -> Burnaby junk, Vancouver junk, Coquitlam junk, Richmond Junk, Surrey Junk -->
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #007493;">
+         <a class="navbar-brand mx-auto" href="../index.html">
+             <img alt="logo" src="../images/Logo-Icon-02.png" style="height: 50px; width: auto; "></a>
+         <div class="navbar-menu mx-auto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <!-- Services -->
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../pages/What%20They%20Remove.html">What They Remove</a>
+                        <a class="dropdown-item" href="../pages/Recycling.html" >Recycling</a>
+                        <a class="dropdown-item" href="../pages/Donation.html">Donations</a>
+                     </div>
+                  </li>
+                  <!-- Prices -->
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Prices
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../pages/Calculate.html">Calculate</a>
+                        <a class="dropdown-item" href="../pages/How%20To%20Calculate.html">How To Calculate</a>
+                        <a class="dropdown-item" href="../pages/American%20Pricing.html">American Pricing</a>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="../pages/News.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="../pages/Contact.html">Contact</a>
+                  </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="../pages/About.html">About</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+        </nav>
+         <!-- Here my Navbar-Menu ends -->
+      <!-- paralax -->
+      <div class="parallax"></div>
+      <!-- banner cover -->
+      <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+         <header class="masthead mb-auto">
+            <div class="inner">
+            </div>
+         </header>
+         <main class="inner cover">
+            <h1 class="cover-heading mt-3">Calculate</h1>
+            <img class="logo-junk" alt="logo" src="../images/Logo-JunkCalculator-01.png" style="height: 200px; width: auto; padding-top: 10px; padding-bottom: 10px;">
+            <p class="lead mb-3">Are you paying for volume?
+               <br> Make sure it's fair!
+            </p>
+         </main>
+         
+      </div>
+      <!-- FORM -->
+      <form class="form" method="post" action="#">
+         <!-- Bootsrap Form -->
+         <div class="container p-3 col-sm-4">
+             
+             <!-- Price Per Quarter -->
+             
+            <div class="container" >
+               <div class="form-group-static">
+                  <label for="price">Price Per Quarter (Double of 8th)</label>
+                  <input type="text" class="form-control" id="price" placeholder="Select The Price" name="price">
+               </div>
+            </div>
+             
+            <!-- Load Size -->
+            <div class="container" >
+               <div class="form-group" >
+                  <div class="custom-control custom-checkbox p-0">
+                     <label for="load">Load Size</label>
+                     <select class="form-control" id="load">
+                        <option value="1"> 1/4 </option>
+                        <option value="2"> 1/2 </option>
+                        <option value="3"> 3/4 </option>
+                        <option value="4"> Full Load </option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+             
+            <!-- Drywall -->
+             
+            <div class="container" >
+               <div class="form-group" >
+                  <div class="custom-control custom-checkbox p-0">
+                    
+                     <label for="drywall">Drywall</label>
+                     <select class="form-control" id="drywall">
+                         <option value="0"> 0 </option> 
+                        <option value="1"> Bagged up </option>
+                        <option value="2"> Not Bagged </option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+             
+             <!-- Insulation -->
+             
+            <div class="container" >
+               <div class="form-group" >
+                  <div class="custom-control custom-checkbox p-0">
+                    
+                     <label for="insulation">Insulation</label>
+                     <select class="form-control" id="insulation">
+                          <option value="0"> 0 </option> 
+                        <option value="1"> Bagged up </option>
+                        <option value="2"> Not Bagged </option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+             
+            <!-- Eletronics -->
+             
+            <div class="container" >
+               <div class="form-group" >
+                  <div class="custom-control custom-checkbox p-0">
+                   
+                     <label for="eletronics">Eletronics</label>
+                     <select class="form-control" id="eletronics">
+                         <option value="0"> 0 </option>  
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4+ </option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+                          
+            <!-- Chemicals -->
+             
+            <div class="container" >
+               <div class="form-group" >
+                  <div class="custom-control custom-checkbox p-0">
+                     
+                     <label for="chemicals">Chemicals</label>
+                     <select class="form-control" id="chemicals">
+                         <option value="0"> 0 </option> 
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4+ </option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+             
+            <!-- Mattresses -->
+             
+            <div class="container" >
+               <div class="form-group" >
+                  <div class="custom-control custom-checkbox p-0">
+                     
+                     <label for="mattresses">Mattresses</label>
+                     <select class="form-control" id="mattresses">
+                          <option value="0"> 0 </option> 
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4+ </option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+             
+            <!-- Heavy Materials 
+            <input type="checkbox" class="custom-control-input" id="defaultUnchecked6">
+                     <label class="custom-control-label" for="defaultUnchecked6"></label>
+            -->
+             
+            <div class="container" >
+               <div class="form-group" >
+                  <div class="custom-control custom-checkbox p-0">
+                     
+                     <label for="heavy">Heavy Materials</label>
+                     <select class="form-control" id="heavy">
+                         <option value="0"> 0 </option> 
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4+ </option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+             
+            <!-- Tires -->
+             
+            <div class="container" >
+               <div class="form-group" >
+                  <div class="custom-control custom-checkbox p-0">
+                     
+                     <label for="tires">Tires</label>
+                     <select class="form-control" id="tires">
+                         <option value="0"> 0 </option> 
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4+ </option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+             
+            
+             
+             <!-- button -->
+            
+            <button type="button" class="btn btn-primary btn-lg" onclick="getprice()"> Calculate your Junk </button>
+            
+                
+              <!-- total -->
+              <div class="container" >
+               <div class="form-group-static">
+                  <label for="total">Total</label>
+                  <input type="text" class="form-control" id="total" placeholder="$" name="total">
+               </div>
+            </div>
+             
+        </div>
+    </form>
+            
+      <!-- Footer -->
+
+      <footer class="mastfoot mt-auto">
+         <div class="inner">
+            <p>Visit also the <a href="../pages/Donation.html">Donations</a>, and <a href="../pages/Recycling.html">Recycling</a> pages</p>
+         </div>
+      </footer>
+
+      <hr>
+<!-- Footer -->
+      <footer class="page-footer font-small mdb-color pt-4">
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+               <!-- Footer links -->
+               <div class="row text-center text-md-left mt-3 pb-3">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                     <h6 class="text-uppercase mb-4 font-weight-bold">Junk Calculator</h6>
+                     <p>This is a Final Project of BCIT's Course COMP 1630. It was made a serious research among Junk Removal companies recently, in order to get the main tool on the Page Calculate done.
+                     </p>
+                  </div>
+                  <!-- Grid column -->
+                  <hr class="w-100 clearfix d-md-none">
+                  <!-- Grid column -->
+                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                     <h6 class="text-uppercase mb-4 font-weight-bold">Cities</h6>
+                     <p>
+                           <a href="../pages/Vancouver.html">Vancouver</a>
+                        </p>
+                        <p>
+                           <a href="../pages/Burnaby.html">Burnaby</a>
+                        </p>
+                        <p>
+                           <a href="../pages/Richmond.html">Richmond</a>
+                        </p>
+                        <p>
+                           <a href="../pages/Surrey.html">Surrey</a>
+                        </p>
+                         <p>
+                           <a href="../pages/Coquitlam.html">Coquitlam</a>
+                        </p>
+                  </div>
+                  <!-- Grid column -->
+                  <hr class="w-100 clearfix d-md-none">
+                  <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                     <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                     <p>
+                        <a href="../pages/Calculate.html">Calculate</a>
+                     </p>
+                     <p>
+                        <a href="../pages/How%20To%20Calculate.html">Prices</a>
+                     </p>
+                     <p>
+                        <a href="../pages/What%20They%20Remove.html">What They Remove</a>
+                     </p>
+                     <p>
+                        <a href="../pages/Contact.html">Contact</a>
+                     </p>
+                  </div>
+                  <!-- Grid column -->
+                  <hr class="w-100 clearfix d-md-none">
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                     <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                     <p>
+                        <i class="fas fa-home mr-3"></i> Vancouver, BC V3N 4C9, Canada.
+                     </p>
+                     <p>
+                        <i class="fas fa-envelope mr-3"></i> yamgarcia.ca@gmail.com
+                     </p>
+                     <p>
+                           <i class="fas fa-print mr-3"><a href="https://www.linkedin.com/in/yam-garcia-b01485b5/">https://www.linkedin.com/in/yam-garcia-b01485b5/</a></i> 
+                        </p>
+                     <p>
+                        <i class="fas fa-print mr-3"><a href="https://github.com/yamgarcia">https://github.com/yamgarcia</a></i> 
+                     </p>
+                  </div>
+                  <!-- Grid column -->
+               </div>
+               <!-- Footer copyrights -->
+               <hr>
+               <!-- Grid row -->
+               <div class="row d-flex align-items-center">
+                  <!-- Grid column -->
+                  <div class="col-md-7 col-lg-8">
+                     <!--Copyright-->
+                     <p class="text-center text-md-left">© 2018 Copyright:
+                        <a href="/index.html">
+                        <strong> Junk Calculator</strong>
+                        </a>
+                     </p>
+                  </div>
+                  <!--  Grid column social medias 
+                  <div class="col-md-5 col-lg-4 ml-lg-0">
+                  </div>  -->
+               </div>
+               <!-- Grid row -->
+            </div>
+            <!-- Footer Links -->
+         </footer>
+      <!-- Footer -->
+      <!--   -->
+      <!-- BOOTSTRAP JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+       <!-- js stuff -->
+      <script src="../js/calculate.js"></script>
+   </body>
+</html>
